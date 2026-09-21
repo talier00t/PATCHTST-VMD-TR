@@ -13,7 +13,7 @@ A model that forecasts hourly electricity consumption across Turkey. It uses VMD
 
 Trained and tested on 10 years of hourly EPİAŞ (Turkish energy exchange) consumption data, 2016 to 2026.
 
-![Forecast vs Actual](docs/results_v7.png)
+![Forecast vs Actual](docs/results_v6.png)
 
 ## What it does
 
