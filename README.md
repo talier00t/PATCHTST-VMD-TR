@@ -53,7 +53,7 @@ Input window (168h x N features)
 └── README.md
 ```
 
-> Built and run on Kaggle (GPU). Adjust the `/kaggle/input` and `/kaggle/working` paths if running locally.
+> Built and run on Kaggle. Adjust the `/kaggle/input` and `/kaggle/working` paths if running locally.
 
 ## Config
 
