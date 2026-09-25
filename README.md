@@ -44,17 +44,6 @@ Input window (168h x N features)
 5. **Feature engineering**: calendar features (sin/cos encodings for hour/day/month, holidays including Ramadan, tariff periods), HDD/CDD, temperature interactions, lag/rolling stats for both load and price.
 6. **Sequence building**: 168 hour lookback windows, normalized with StandardScaler, chronological 70/15/15 train/val/test split to avoid leakage.
 
-## Repo structure
-
-```
-.
-├── patchtst_rolling_vmd.ipynb   # data, training, evaluation, all in one
-├── docs/                        # plots used in this README
-└── README.md
-```
-
-> Built and run on Kaggle. Adjust the `/kaggle/input` and `/kaggle/working` paths if running locally.
-
 ## Config
 
 | Group | Setting |
@@ -72,7 +61,7 @@ pip install torch numpy pandas scikit-learn matplotlib seaborn requests holidays
 ```
 
 The code falls back to CPU if no GPU is found, but you really want a CUDA capable GPU here. Rolling VMD plus 10 years of hourly data on CPU would be painful. If you don't have one, just run it on a cloud based platform like Kaggle (which is what this was built and trained on) or Google Colab, both give free CUDA GPU access.
-
+> Built and run on Kaggle. Adjust the `/kaggle/input` and `/kaggle/working` paths if running locally.
 ## Usage
 
 1. Put the EPİAŞ consumption CSV and PTF price CSV in the input folder (or point `EPIAS_PATH` / `PTF_PATH` to them).
